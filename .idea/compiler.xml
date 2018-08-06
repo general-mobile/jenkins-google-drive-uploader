@@ -7,6 +7,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="google-drive-upload" />
+        <module name="jenkins-google-drive-uploader" />
       </profile>
     </annotationProcessing>
   </component>

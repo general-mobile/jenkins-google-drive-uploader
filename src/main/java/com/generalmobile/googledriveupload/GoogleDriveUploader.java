@@ -1,4 +1,4 @@
-package com.anicks.googledriveupload;
+package com.generalmobile.googledriveupload;
 
 import com.google.api.client.auth.oauth2.Credential;
 import com.google.jenkins.plugins.credentials.domains.DomainRequirementProvider;
@@ -27,12 +27,14 @@ public final class GoogleDriveUploader extends Recorder {
     private final String credentialsId;
     private final String driveLocation;
     private final String uploadFolder;
+    private final String userMail;
 
     @DataBoundConstructor
-    public GoogleDriveUploader(String credentialsId, String driveLocation, String uploadFolder) {
+    public GoogleDriveUploader(String credentialsId, String driveLocation, String uploadFolder, String userMail) {
         this.credentialsId = checkNotNull(credentialsId);
         this.driveLocation = checkNotNull(driveLocation);
         this.uploadFolder = checkNotNull(uploadFolder);
+        this.userMail = checkNotNull(userMail);
     }
 
     @Override
@@ -43,6 +45,7 @@ public final class GoogleDriveUploader extends Recorder {
             listener.getLogger().println("Google Drive Uploading Plugin Started.");
             GoogleRobotCredentials credentials = GoogleRobotCredentials.getById(getCredentialsId());
             GoogleDriveManager driveManager = new GoogleDriveManager(authorize(credentials));
+            driveManager.userMail = userMail;
 
             String workspace = build.getWorkspace().getRemote();
 
@@ -82,6 +85,8 @@ public final class GoogleDriveUploader extends Recorder {
     public String getUploadFolder() {
         return uploadFolder;
     }
+
+    public String getUserMail(){ return  userMail; }
 
     @Override
     public BuildStepMonitor getRequiredMonitorService() {

@@ -1,4 +1,4 @@
-package com.anicks.googledriveupload;
+package com.generalmobile.googledriveupload;
 
 import com.google.api.client.auth.oauth2.Credential;
 import com.google.api.client.googleapis.javanet.GoogleNetHttpTransport;
@@ -37,6 +37,7 @@ public class GoogleDriveManager {
     }
 
     private final Drive drive;
+    public String userMail;
 
     public GoogleDriveManager(Credential credentials) throws GeneralSecurityException {
         drive = getDriveService(credentials);
@@ -133,10 +134,10 @@ public class GoogleDriveManager {
             File inserted = drive.files().insert(file).execute();
 
             Permission userPermission = new Permission()
-                    .setValue("mehmet.ayan@generalmobile.com")
+                    .setValue(userMail)
                     .setType("user")
                     .setRole("writer")
-                    .setEmailAddress("mehmet.ayan@generalmobile.com");
+                    .setEmailAddress(userMail);
             drive.permissions().insert(inserted.getId(), userPermission)
                     .setFields("id")
                     .execute();

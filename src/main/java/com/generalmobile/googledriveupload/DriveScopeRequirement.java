@@ -1,4 +1,4 @@
-package com.anicks.googledriveupload;
+package com.generalmobile.googledriveupload;
 
 import com.google.api.services.drive.DriveScopes;
 import com.google.common.collect.ImmutableList;

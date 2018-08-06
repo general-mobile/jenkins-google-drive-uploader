@@ -6,4 +6,7 @@
     <form:entry title="${%Upload folder name}" field="uploadFolder">
         <form:textbox />
     </form:entry>
+    <form:entry title="${%User Mail}" field="userMail">
+        <form:textbox />
+    </form:entry>
 </j:jelly>
