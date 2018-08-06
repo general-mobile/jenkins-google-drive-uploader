@@ -1,0 +1,9 @@
+<j:jelly xmlns:j="jelly:core" xmlns:auth="/lib/auth" xmlns:form="/lib/form">
+    <auth:credentials title="${%Google Credentials}" field="credentialsId"/>
+    <form:entry title="${%Drive location id}" field="driveLocation">
+        <form:textbox />
+    </form:entry>
+    <form:entry title="${%Upload folder name}" field="uploadFolder">
+        <form:textbox />
+    </form:entry>
+</j:jelly>
