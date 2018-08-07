@@ -15,12 +15,12 @@ import com.google.api.services.drive.model.Permission;
 import hudson.model.BuildListener;
 
 import java.io.IOException;
-import java.security.GeneralSecurityException;
 import java.text.DecimalFormat;
 import java.text.NumberFormat;
 import java.util.Collections;
+import java.util.Objects;
 
-public class GoogleDriveManager {
+class GoogleDriveManager {
 
     private static final int MB = 0x100000;
 
@@ -37,23 +37,25 @@ public class GoogleDriveManager {
     }
 
     private final Drive drive;
-    public String userMail;
 
-    public GoogleDriveManager(Credential credentials) throws GeneralSecurityException {
+    GoogleDriveManager(Credential credentials) {
         drive = getDriveService(credentials);
     }
 
-    private Drive getDriveService(Credential credential) throws GeneralSecurityException {
+    private Drive getDriveService(Credential credential) {
         return new Drive.Builder(
                 HTTP_TRANSPORT, new JacksonFactory(), credential)
                 .setApplicationName(APPLICATION_NAME)
                 .build();
     }
 
-    public void uploadFolder(String file, String remoteDir, BuildListener listener) throws IOException {
+    void uploadFolder(String file, String remoteDir, BuildListener listener, String userMail) {
         java.io.File tmpFile = new java.io.File(file);
-        File parent = controlParent(remoteDir);
-        uploadFile(parent.getId(), tmpFile, listener);
+        listener.getLogger().println("userMail " + userMail);
+        File parent = controlParent(remoteDir, userMail);
+        if (parent != null) {
+            uploadFile(parent.getId(), tmpFile, listener);
+        }
     }
 
     private void uploadFile(String copyTo, final java.io.File downloaded, final BuildListener listener) {
@@ -65,12 +67,12 @@ public class GoogleDriveManager {
                     folder.setParents(Collections.singletonList(new ParentReference().setId(copyTo)));
                 }
                 folder.setMimeType("application/vnd.google-apps.folder");
-                com.google.api.services.drive.model.File newFolder = null;
+                com.google.api.services.drive.model.File newFolder;
                 try {
                     newFolder = drive.files().insert(folder)
                             .setFields("id")
                             .execute();
-                    for (java.io.File file : downloaded.listFiles()) {
+                    for (java.io.File file : Objects.requireNonNull(downloaded.listFiles())) {
                         uploadFile( newFolder.getId(), file, listener);
                     }
                 } catch (IOException e) {
@@ -79,9 +81,9 @@ public class GoogleDriveManager {
             } else {
                 com.google.api.services.drive.model.File body1 = new com.google.api.services.drive.model.File();
 
-                listener.getLogger().println("File upload starting. " + downloaded.getPath());
 
                 if (downloaded != null) {
+                    listener.getLogger().println("File upload starting. " + downloaded.getPath());
                     body1.setTitle(downloaded.getName());
                     String type1 = java.nio.file.Files.probeContentType(downloaded.toPath());
                     body1.setMimeType(type1);
@@ -116,7 +118,7 @@ public class GoogleDriveManager {
         }
     }
 
-    private File controlParent(String parentId) {
+    private File controlParent(String parentId, String userMail) {
 
         try {
             FileList list = drive.files().list().execute();

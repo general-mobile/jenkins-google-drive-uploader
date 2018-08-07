@@ -3,8 +3,19 @@ Jenkins Google Driver Uploader
 This plugin allows you to upload artifacts to your google service account.
 
 
-### How to build
+# Install
 
-`mvn clean package`
+Create an HPI file to install in Jenkins (HPI file will be in
+`target/google-drive-upload.hpi`).
 
-Creates the plugin HPI package for use with Jenkins.
+    mvn clean package
+
+
+# ScreenShot
+
+![sample_image](assets/jenkins-drive-uploader.png)
+
+
+# Thanks
+
+[Marko Stipanov](https://github.com/mstipanov) for creating [Slack Plugin](https://github.com/mstipanov/google-drive-upload-plugin). This helps us a lot to create this plugin.

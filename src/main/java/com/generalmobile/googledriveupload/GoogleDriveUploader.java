@@ -18,6 +18,7 @@ import org.kohsuke.stapler.DataBoundConstructor;
 
 import java.io.IOException;
 import java.security.GeneralSecurityException;
+import java.util.Objects;
 
 import static com.google.common.base.Preconditions.checkNotNull;
 
@@ -25,17 +26,31 @@ import static com.google.common.base.Preconditions.checkNotNull;
 public final class GoogleDriveUploader extends Recorder {
 
     private final String credentialsId;
-    private final String driveLocation;
+    private final String driveFolderName;
     private final String uploadFolder;
     private final String userMail;
 
     @DataBoundConstructor
-    public GoogleDriveUploader(String credentialsId, String driveLocation, String uploadFolder, String userMail) {
+    public GoogleDriveUploader(String credentialsId, String driveFolderName, String uploadFolder, String userMail) {
         this.credentialsId = checkNotNull(credentialsId);
-        this.driveLocation = checkNotNull(driveLocation);
+        this.driveFolderName = checkNotNull(driveFolderName);
         this.uploadFolder = checkNotNull(uploadFolder);
         this.userMail = checkNotNull(userMail);
     }
+
+    public String getUploadFolder() {
+        return uploadFolder;
+    }
+
+    public String getUserMail() {
+        return userMail;
+    }
+
+    public String getDriveFolderName() {
+        return driveFolderName;
+    }
+
+
 
     @Override
     public boolean perform(AbstractBuild<?, ?> build, Launcher launcher, BuildListener listener)
@@ -45,9 +60,9 @@ public final class GoogleDriveUploader extends Recorder {
             listener.getLogger().println("Google Drive Uploading Plugin Started.");
             GoogleRobotCredentials credentials = GoogleRobotCredentials.getById(getCredentialsId());
             GoogleDriveManager driveManager = new GoogleDriveManager(authorize(credentials));
-            driveManager.userMail = userMail;
 
-            String workspace = build.getWorkspace().getRemote();
+
+            String workspace = Objects.requireNonNull(build.getWorkspace()).getRemote();
 
             if (uploadFolder.length() > 0) {
                 if (uploadFolder.startsWith("$")) {
@@ -57,11 +72,12 @@ public final class GoogleDriveUploader extends Recorder {
                 }
             }
             listener.getLogger().println("Uploading folder: " + workspace);
-            driveManager.uploadFolder(workspace, getDriveLocation(), listener);
+            driveManager.uploadFolder(workspace, getDriveFolderName(), listener, userMail);
         } catch (GeneralSecurityException e) {
             build.setResult(Result.FAILURE);
             return false;
         }
+
         return true;
     }
 
@@ -74,19 +90,11 @@ public final class GoogleDriveUploader extends Recorder {
         return DomainRequirementProvider.of(getClass(), DriveScopeRequirement.class);
     }
 
-    public String getCredentialsId() {
+    private String getCredentialsId() {
         return credentialsId;
     }
 
-    public String getDriveLocation() {
-        return driveLocation;
-    }
 
-    public String getUploadFolder() {
-        return uploadFolder;
-    }
-
-    public String getUserMail(){ return  userMail; }
 
     @Override
     public BuildStepMonitor getRequiredMonitorService() {
