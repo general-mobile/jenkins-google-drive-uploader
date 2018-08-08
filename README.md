@@ -18,4 +18,4 @@ Create an HPI file to install in Jenkins (HPI file will be in
 
 # Thanks
 
-[Marko Stipanov](https://github.com/mstipanov) for creating [Slack Plugin](https://github.com/mstipanov/google-drive-upload-plugin). This helps us a lot to create this plugin.
+[Marko Stipanov](https://github.com/mstipanov) for creating [Jenkins Google Driver Uploader](https://github.com/mstipanov/google-drive-upload-plugin). This helps us a lot to create this plugin.
