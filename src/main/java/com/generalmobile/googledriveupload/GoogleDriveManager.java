@@ -1,10 +1,14 @@
 package com.generalmobile.googledriveupload;
 
 import com.google.api.client.auth.oauth2.Credential;
+import com.google.api.client.googleapis.batch.BatchRequest;
+import com.google.api.client.googleapis.batch.json.JsonBatchCallback;
 import com.google.api.client.googleapis.javanet.GoogleNetHttpTransport;
+import com.google.api.client.googleapis.json.GoogleJsonError;
 import com.google.api.client.googleapis.media.MediaHttpUploader;
 import com.google.api.client.googleapis.media.MediaHttpUploaderProgressListener;
 import com.google.api.client.http.FileContent;
+import com.google.api.client.http.HttpHeaders;
 import com.google.api.client.http.HttpTransport;
 import com.google.api.client.json.jackson.JacksonFactory;
 import com.google.api.services.drive.Drive;
@@ -120,6 +124,8 @@ class GoogleDriveManager {
 
     private File controlParent(String parentId, String userMail) {
 
+        String[] mails = userMail.split(";");
+
         try {
             FileList list = drive.files().list().execute();
 
@@ -135,14 +141,34 @@ class GoogleDriveManager {
 
             File inserted = drive.files().insert(file).execute();
 
-            Permission userPermission = new Permission()
-                    .setValue(userMail)
-                    .setType("user")
-                    .setRole("writer")
-                    .setEmailAddress(userMail);
-            drive.permissions().insert(inserted.getId(), userPermission)
-                    .setFields("id")
-                    .execute();
+            BatchRequest batch = drive.batch();
+
+            JsonBatchCallback<Permission> callBack = new JsonBatchCallback<Permission>() {
+                @Override
+                public void onSuccess(Permission permission, HttpHeaders httpHeaders) throws IOException {
+
+                }
+
+                @Override
+                public void onFailure(GoogleJsonError googleJsonError, HttpHeaders httpHeaders) throws IOException {
+
+                }
+            };
+
+            for(String mail : mails)
+            {
+                Permission userPermission = new Permission()
+                        .setValue(mail)
+                        .setType("user")
+                        .setRole("writer")
+                        .setEmailAddress(mail);
+                drive.permissions().insert(inserted.getId(), userPermission)
+                        .setFields("id")
+                        .queue(batch,callBack);
+            }
+            batch.execute();
+
+
 
             return inserted;
 

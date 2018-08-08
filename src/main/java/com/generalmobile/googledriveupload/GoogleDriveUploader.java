@@ -14,7 +14,10 @@ import hudson.tasks.BuildStepDescriptor;
 import hudson.tasks.BuildStepMonitor;
 import hudson.tasks.Publisher;
 import hudson.tasks.Recorder;
+import hudson.util.FormValidation;
 import org.kohsuke.stapler.DataBoundConstructor;
+import org.kohsuke.stapler.QueryParameter;
+import org.springframework.util.StringUtils;
 
 import java.io.IOException;
 import java.security.GeneralSecurityException;
@@ -36,6 +39,19 @@ public final class GoogleDriveUploader extends Recorder {
         this.driveFolderName = checkNotNull(driveFolderName);
         this.uploadFolder = checkNotNull(uploadFolder);
         this.userMail = checkNotNull(userMail);
+    }
+
+
+    public FormValidation doCheckUserMail(@QueryParameter String value) {
+        return FormValidation.error("Not a number");
+           /* int at =StringUtils.countOccurrencesOf(value,"@");
+            int semicolon =StringUtils.countOccurrencesOf(value,";");
+
+            if (at-1==semicolon)
+                return FormValidation.warning("Please check mail again. If you using multi mail please separate each mail with ;");
+            else
+                return FormValidation.ok();*/
+
     }
 
     public String getUploadFolder() {

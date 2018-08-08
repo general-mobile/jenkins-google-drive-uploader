@@ -2,16 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b1d91830-f362-43e8-8601-df349aa1dbdb" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/assets/jenkins-drive-uploader.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/generalmobile/googledriveupload/GoogleDriveUploader/help-uploadFolder.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/generalmobile/googledriveupload/GoogleDriveUploader/help-userMail.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/generalmobile/googledriveupload/GoogleDriveManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/generalmobile/googledriveupload/GoogleDriveManager.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/generalmobile/googledriveupload/GoogleDriveUploader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/generalmobile/googledriveupload/GoogleDriveUploader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/generalmobile/googledriveupload/GoogleDriveUploader/config.jelly" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/generalmobile/googledriveupload/GoogleDriveUploader/config.jelly" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/generalmobile/googledriveupload/GoogleDriveUploader/help-driveLocation.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/generalmobile/googledriveupload/GoogleDriveUploader/help-driveFolderName.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/generalmobile/googledriveupload/GoogleDriveUploader/help-userMail.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/generalmobile/googledriveupload/GoogleDriveUploader/help-userMail.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -26,32 +20,24 @@
       <file leaf-file-name="GoogleDriveUploader.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/generalmobile/googledriveupload/GoogleDriveUploader.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="373">
-              <caret line="73" column="71" lean-forward="true" selection-start-line="73" selection-start-column="71" selection-end-line="73" selection-end-column="71" />
+            <state relative-caret-position="225">
+              <caret line="36" column="113" selection-start-line="36" selection-start-column="105" selection-end-line="36" selection-end-column="113" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#1547#1548#0" expanded="true" />
-                <element signature="e#1582#1583#0" expanded="true" />
-                <element signature="e#1617#1618#0" expanded="true" />
-                <element signature="e#1648#1649#0" expanded="true" />
-                <element signature="e#1689#1690#0" expanded="true" />
-                <element signature="e#1727#1728#0" expanded="true" />
-                <element signature="e#3142#3143#0" expanded="true" />
-                <element signature="e#3178#3179#0" expanded="true" />
-                <element signature="e#3455#3456#0" expanded="true" />
-                <element signature="e#3499#3500#0" expanded="true" />
-                <element signature="e#3661#3662#0" expanded="true" />
-                <element signature="e#3715#3716#0" expanded="true" />
-                <element signature="e#3813#3814#0" expanded="true" />
-                <element signature="e#3848#3849#0" expanded="true" />
+                <element signature="e#4125#4126#0" expanded="true" />
+                <element signature="e#4169#4170#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.jelly" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/index.jelly">
-          <provider selected="true" editor-type-id="text-editor" />
+      <file leaf-file-name="GoogleDriveManager.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/generalmobile/googledriveupload/GoogleDriveManager.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="15">
+              <caret line="12" column="8" selection-start-line="12" selection-start-column="8" selection-end-line="12" selection-end-column="8" />
+            </state>
+          </provider>
         </entry>
       </file>
       <file leaf-file-name="config.jelly" pinned="false" current-in-tab="false">
@@ -63,66 +49,20 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="AbstractGoogleJsonClientRequest.class" pinned="false" current-in-tab="false">
+        <entry file="jar://$MAVEN_REPOSITORY$/com/google/api-client/google-api-client/1.17.0-rc/google-api-client-1.17.0-rc.jar!/com/google/api/client/googleapis/services/json/AbstractGoogleJsonClientRequest.class">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="390">
+              <caret line="37" column="72" selection-start-line="37" selection-start-column="55" selection-end-line="37" selection-end-column="72" />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="help-userMail.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/com/generalmobile/googledriveupload/GoogleDriveUploader/help-userMail.html">
           <provider selected="true" editor-type-id="text-editor">
             <state>
-              <caret column="36" lean-forward="true" selection-start-column="36" selection-end-column="36" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="help-uploadFolder.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/com/generalmobile/googledriveupload/GoogleDriveUploader/help-uploadFolder.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="4" column="6" lean-forward="true" selection-end-line="4" selection-end-column="6" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="help-driveFolderName.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/com/generalmobile/googledriveupload/GoogleDriveUploader/help-driveFolderName.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="4" column="6" lean-forward="true" selection-start-line="4" selection-start-column="6" selection-end-line="4" selection-end-column="6" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="README.md" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/README.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="300">
-                <caret line="20" column="37" selection-start-line="20" selection-start-column="37" selection-end-line="20" selection-end-column="37" />
-              </first_editor>
-              <second_editor />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="GoogleDriveManager.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/generalmobile/googledriveupload/GoogleDriveManager.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="390">
-              <caret line="38" column="30" selection-start-line="38" selection-start-column="30" selection-end-line="38" selection-end-column="30" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#1455#1456#0" expanded="true" />
-                <element signature="e#1507#1508#0" expanded="true" />
-                <element signature="e#4252#5171#0" expanded="true" />
-                <element signature="e#5170#5171#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DriveScopeRequirement.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/generalmobile/googledriveupload/DriveScopeRequirement.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+              <caret column="105" selection-start-column="105" selection-end-column="105" />
             </state>
           </provider>
         </entry>
@@ -153,10 +93,13 @@
       <find>googledri</find>
       <find>driveLocation</find>
       <find>userMail</find>
+      <find>StringUtils</find>
+      <find>form</find>
     </findStrings>
     <replaceStrings>
       <replace />
       <replace>drive</replace>
+      <replace>f</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -181,12 +124,12 @@
         <option value="$PROJECT_DIR$/LICENCE" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/resources/com/generalmobile/googledriveupload/GoogleDriveUploader/help-uploadFolder.html" />
-        <option value="$PROJECT_DIR$/src/main/resources/com/generalmobile/googledriveupload/GoogleDriveUploader/help-userMail.html" />
         <option value="$PROJECT_DIR$/src/main/resources/com/generalmobile/googledriveupload/GoogleDriveUploader/help-driveFolderName.html" />
-        <option value="$PROJECT_DIR$/src/main/resources/com/generalmobile/googledriveupload/GoogleDriveUploader/config.jelly" />
         <option value="$PROJECT_DIR$/README.md" />
-        <option value="$PROJECT_DIR$/src/main/java/com/generalmobile/googledriveupload/GoogleDriveUploader.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/generalmobile/googledriveupload/GoogleDriveManager.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/com/generalmobile/googledriveupload/GoogleDriveUploader/help-userMail.html" />
+        <option value="$PROJECT_DIR$/src/main/java/com/generalmobile/googledriveupload/GoogleDriveUploader.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/com/generalmobile/googledriveupload/GoogleDriveUploader/config.jelly" />
       </list>
     </option>
   </component>
@@ -222,22 +165,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="google-drive-upload" type="58d84e3e:PackageViewProjectNode" />
-              <item name="google-drive-upload" type="616d4139:PackageViewModuleNode" />
-            </path>
-            <path>
-              <item name="google-drive-upload" type="58d84e3e:PackageViewProjectNode" />
-              <item name="google-drive-upload" type="616d4139:PackageViewModuleNode" />
-              <item name="com.anicks.googledriveupload" type="1f31426a:PackageElementNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
+      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -248,11 +176,6 @@
             <path>
               <item name="google-drive-upload" type="b2602c69:ProjectViewProjectNode" />
               <item name="jenkins-google-drive-uploader" type="462c0819:PsiDirectoryNode" />
-              <item name="assets" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="google-drive-upload" type="b2602c69:ProjectViewProjectNode" />
-              <item name="jenkins-google-drive-uploader" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -260,21 +183,6 @@
               <item name="jenkins-google-drive-uploader" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="google-drive-upload" type="b2602c69:ProjectViewProjectNode" />
-              <item name="jenkins-google-drive-uploader" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="google-drive-upload" type="b2602c69:ProjectViewProjectNode" />
-              <item name="jenkins-google-drive-uploader" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="googledriveupload" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="google-drive-upload" type="b2602c69:ProjectViewProjectNode" />
@@ -291,16 +199,26 @@
               <item name="resources" type="462c0819:PsiDirectoryNode" />
               <item name="GoogleDriveUploader" type="462c0819:PsiDirectoryNode" />
             </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="PackagesPane">
+        <subPane>
+          <expand>
             <path>
-              <item name="google-drive-upload" type="b2602c69:ProjectViewProjectNode" />
-              <item name="jenkins-google-drive-uploader" type="462c0819:PsiDirectoryNode" />
-              <item name="target" type="462c0819:PsiDirectoryNode" />
+              <item name="google-drive-upload" type="58d84e3e:PackageViewProjectNode" />
+              <item name="google-drive-upload" type="616d4139:PackageViewModuleNode" />
+            </path>
+            <path>
+              <item name="google-drive-upload" type="58d84e3e:PackageViewProjectNode" />
+              <item name="google-drive-upload" type="616d4139:PackageViewModuleNode" />
+              <item name="com.anicks.googledriveupload" type="1f31426a:PackageElementNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="AndroidView" />
       <pane id="Scope" />
     </panes>
   </component>
@@ -308,6 +226,7 @@
     <property name="SearchEverywhereHistoryKey" value="ter&#9;ACTION&#9;ActivateTerminalToolWindow" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../slack-plugin" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
@@ -454,6 +373,7 @@
       <workItem from="1533101956162" duration="6289000" />
       <workItem from="1533538157753" duration="4703000" />
       <workItem from="1533545028303" duration="11326000" />
+      <workItem from="1533726890728" duration="1616000" />
     </task>
     <task id="LOCAL-00001" summary="rename package name and add mail variable">
       <created>1533563577024</created>
@@ -473,7 +393,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="30917000" />
+    <option name="totallyTimeSpent" value="37372000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="-2" width="1920" height="1082" extended-state="6" />
@@ -491,7 +411,6 @@
       <window_info id="UI Designer" order="1" />
       <window_info anchor="bottom" id="Debug" order="9" weight="0.39959016" />
       <window_info anchor="bottom" id="TODO" order="12" />
-      <window_info anchor="bottom" id="Messages" order="13" weight="0.32991803" />
       <window_info anchor="right" id="Palette&#9;" order="4" />
       <window_info id="Image Layers" order="5" />
       <window_info anchor="bottom" id="Java Enterprise" order="3" />
@@ -501,15 +420,16 @@
       <window_info anchor="bottom" id="Spring" order="0" />
       <window_info active="true" anchor="bottom" id="Terminal" order="1" visible="true" weight="0.3271795" />
       <window_info content_ui="combo" id="Project" order="4" visible="true" weight="0.24947916" />
-      <window_info anchor="bottom" id="Find" order="7" weight="0.32923076" />
-      <window_info id="Learn" />
+      <window_info id="Learn" order="8" />
       <window_info anchor="right" id="Theme Preview" order="5" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Inspection" order="11" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="7" type="SLIDING" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="10" weight="0.25" />
+      <window_info anchor="bottom" id="Messages" order="13" weight="0.32991803" />
       <window_info anchor="bottom" id="Message" order="6" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="9" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="7" weight="0.32923076" />
     </layout>
     <layout-to-restore>
       <window_info id="Designer" order="0" />
@@ -561,26 +481,84 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/generalmobile/googledriveupload/DriveScopeRequirement.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/com/generalmobile/googledriveupload/GoogleDriveUploader/help-uploadFolder.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="6" selection-end-line="4" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/jenkins-drive-uploader.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/com/generalmobile/googledriveupload/GoogleDriveUploader/help-userMail.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="36" selection-start-column="36" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/com/generalmobile/googledriveupload/GoogleDriveUploader/help-driveFolderName.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="6" selection-start-line="5" selection-start-column="6" selection-end-line="5" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="300">
+            <caret line="20" column="37" selection-start-line="20" selection-start-column="37" selection-end-line="20" selection-end-column="37" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/generalmobile/googledriveupload/GoogleDriveUploader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="75" column="29" lean-forward="true" selection-start-line="75" selection-start-column="29" selection-end-line="75" selection-end-column="29" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#4125#4126#0" expanded="true" />
+            <element signature="e#4169#4170#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/generalmobile/googledriveupload/GoogleDriveManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="142" column="53" selection-start-line="142" selection-start-column="53" selection-end-line="142" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/com/generalmobile/googledriveupload/GoogleDriveUploader/config.jelly">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="32" selection-start-line="9" selection-start-column="14" selection-end-line="9" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/generalmobile/googledriveupload/GoogleDriveUploader.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1005">
           <caret line="95" column="41" selection-start-line="95" selection-start-column="41" selection-end-line="95" selection-end-column="41" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1547#1548#0" expanded="true" />
-            <element signature="e#1582#1583#0" expanded="true" />
-            <element signature="e#1617#1618#0" expanded="true" />
-            <element signature="e#1648#1649#0" expanded="true" />
-            <element signature="e#1689#1690#0" expanded="true" />
-            <element signature="e#1727#1728#0" expanded="true" />
-            <element signature="e#3142#3143#0" expanded="true" />
-            <element signature="e#3178#3179#0" expanded="true" />
-            <element signature="e#3455#3456#0" expanded="true" />
-            <element signature="e#3499#3500#0" expanded="true" />
-            <element signature="e#3661#3662#0" expanded="true" />
-            <element signature="e#3715#3716#0" expanded="true" />
-            <element signature="e#3813#3814#0" expanded="true" />
-            <element signature="e#3848#3849#0" expanded="true" />
+            <element signature="e#4125#4126#0" expanded="true" />
+            <element signature="e#4169#4170#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -589,13 +567,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1620">
           <caret line="126" column="13" lean-forward="true" selection-start-line="126" selection-start-column="13" selection-end-line="126" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1455#1456#0" expanded="true" />
-            <element signature="e#1507#1508#0" expanded="true" />
-            <element signature="e#4252#5171#0" expanded="true" />
-            <element signature="e#5170#5171#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -605,20 +576,8 @@
           <caret line="63" column="33" selection-start-line="63" selection-start-column="33" selection-end-line="63" selection-end-column="33" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1547#1548#0" expanded="true" />
-            <element signature="e#1582#1583#0" expanded="true" />
-            <element signature="e#1617#1618#0" expanded="true" />
-            <element signature="e#1648#1649#0" expanded="true" />
-            <element signature="e#1689#1690#0" expanded="true" />
-            <element signature="e#1727#1728#0" expanded="true" />
-            <element signature="e#3142#3143#0" expanded="true" />
-            <element signature="e#3178#3179#0" expanded="true" />
-            <element signature="e#3455#3456#0" expanded="true" />
-            <element signature="e#3499#3500#0" expanded="true" />
-            <element signature="e#3661#3662#0" expanded="true" />
-            <element signature="e#3715#3716#0" expanded="true" />
-            <element signature="e#3813#3814#0" expanded="true" />
-            <element signature="e#3848#3849#0" expanded="true" />
+            <element signature="e#4125#4126#0" expanded="true" />
+            <element signature="e#4169#4170#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -643,13 +602,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="510">
           <caret line="48" column="70" selection-start-line="48" selection-start-column="70" selection-end-line="48" selection-end-column="70" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1455#1456#0" expanded="true" />
-            <element signature="e#1507#1508#0" expanded="true" />
-            <element signature="e#4252#5171#0" expanded="true" />
-            <element signature="e#5170#5171#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -659,20 +611,8 @@
           <caret line="53" column="10" selection-start-line="53" selection-start-column="10" selection-end-line="55" selection-end-column="155" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1547#1548#0" expanded="true" />
-            <element signature="e#1582#1583#0" expanded="true" />
-            <element signature="e#1617#1618#0" expanded="true" />
-            <element signature="e#1648#1649#0" expanded="true" />
-            <element signature="e#1689#1690#0" expanded="true" />
-            <element signature="e#1727#1728#0" expanded="true" />
-            <element signature="e#3142#3143#0" expanded="true" />
-            <element signature="e#3178#3179#0" expanded="true" />
-            <element signature="e#3455#3456#0" expanded="true" />
-            <element signature="e#3499#3500#0" expanded="true" />
-            <element signature="e#3661#3662#0" expanded="true" />
-            <element signature="e#3715#3716#0" expanded="true" />
-            <element signature="e#3813#3814#0" expanded="true" />
-            <element signature="e#3848#3849#0" expanded="true" />
+            <element signature="e#4125#4126#0" expanded="true" />
+            <element signature="e#4169#4170#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -696,13 +636,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="195">
           <caret line="29" column="31" lean-forward="true" selection-start-line="29" selection-start-column="31" selection-end-line="30" selection-end-column="32" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1455#1456#0" expanded="true" />
-            <element signature="e#1507#1508#0" expanded="true" />
-            <element signature="e#4252#5171#0" expanded="true" />
-            <element signature="e#5170#5171#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -713,8 +646,6 @@
     <entry file="jar://$MAVEN_REPOSITORY$/org/jenkins-ci/plugins/google-oauth-plugin/0.4/google-oauth-plugin-0.4.jar!/com/google/jenkins/plugins/credentials/oauth/GoogleOAuth2Credentials.class" />
     <entry file="jar://$MAVEN_REPOSITORY$/org/jenkins-ci/plugins/google-oauth-plugin/0.4/google-oauth-plugin-0.4.jar!/com/google/jenkins/plugins/credentials/oauth/GoogleRobotCredentials.class" />
     <entry file="file://$PROJECT_DIR$/src/main/java/com/anicks/googledriveupload/Program.java" />
-    <entry file="jar://$MAVEN_REPOSITORY$/com/google/apis/google-api-services-drive/v2-rev200-1.21.0/google-api-services-drive-v2-rev200-1.21.0.jar!/com/google/api/services/drive/model/Permission.class" />
-    <entry file="jar://$MAVEN_REPOSITORY$/com/google/apis/google-api-services-drive/v2-rev200-1.21.0/google-api-services-drive-v2-rev200-1.21.0.jar!/com/google/api/services/drive/Drive.class" />
     <entry file="jar://$MAVEN_REPOSITORY$/org/jenkins-ci/main/jenkins-core/1.580.1/jenkins-core-1.580.1.jar!/hudson/EnvVars.class" />
     <entry file="jar://$MAVEN_REPOSITORY$/org/apache/ant/ant/1.8.3/ant-1.8.3.jar!/org/apache/tools/ant/DirectoryScanner.class" />
     <entry file="jar://$MAVEN_REPOSITORY$/com/google/api-client/google-api-client/1.17.0-rc/google-api-client-1.17.0-rc.jar!/com/google/api/client/googleapis/media/MediaHttpUploader.class" />
@@ -747,9 +678,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/index.jelly">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/generalmobile/googledriveupload/DriveScopeRequirement.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
@@ -767,13 +695,6 @@
     <entry file="file://$PROJECT_DIR$/assets/jenkins-drive-uploader.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/com/generalmobile/googledriveupload/GoogleDriveUploader/help-userMail.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="36" lean-forward="true" selection-start-column="36" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/com/generalmobile/googledriveupload/GoogleDriveUploader/help-driveFolderName.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
@@ -785,11 +706,42 @@
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="300">
-            <caret line="20" column="37" selection-start-line="20" selection-start-column="37" selection-end-line="20" selection-end-column="37" />
+            <caret line="20" column="34" selection-start-line="20" selection-start-column="34" selection-end-line="20" selection-end-column="34" />
           </first_editor>
           <second_editor />
         </state>
       </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/google/apis/google-api-services-drive/v2-rev200-1.21.0/google-api-services-drive-v2-rev200-1.21.0.jar!/com/google/api/services/drive/model/Permission.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1785">
+          <caret line="156" column="22" selection-start-line="156" selection-start-column="22" selection-end-line="156" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/google/apis/google-api-services-drive/v2-rev200-1.21.0/google-api-services-drive-v2-rev200-1.21.0.jar!/com/google/api/services/drive/Drive.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="1993" column="44" selection-start-line="1993" selection-start-column="44" selection-end-line="1993" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/google/api-client/google-api-client/1.17.0-rc/google-api-client-1.17.0-rc.jar!/com/google/api/client/googleapis/services/json/AbstractGoogleJsonClientRequest.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="37" column="72" selection-start-line="37" selection-start-column="55" selection-end-line="37" selection-end-column="72" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/com/generalmobile/googledriveupload/GoogleDriveUploader/help-userMail.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="105" selection-start-column="105" selection-end-column="105" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/index.jelly">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/com/generalmobile/googledriveupload/GoogleDriveUploader/config.jelly">
       <provider selected="true" editor-type-id="text-editor">
@@ -800,38 +752,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/generalmobile/googledriveupload/GoogleDriveManager.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="38" column="30" selection-start-line="38" selection-start-column="30" selection-end-line="38" selection-end-column="30" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1455#1456#0" expanded="true" />
-            <element signature="e#1507#1508#0" expanded="true" />
-            <element signature="e#4252#5171#0" expanded="true" />
-            <element signature="e#5170#5171#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="15">
+          <caret line="12" column="8" selection-start-line="12" selection-start-column="8" selection-end-line="12" selection-end-column="8" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/generalmobile/googledriveupload/GoogleDriveUploader.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="373">
-          <caret line="73" column="71" lean-forward="true" selection-start-line="73" selection-start-column="71" selection-end-line="73" selection-end-column="71" />
+        <state relative-caret-position="225">
+          <caret line="36" column="113" selection-start-line="36" selection-start-column="105" selection-end-line="36" selection-end-column="113" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1547#1548#0" expanded="true" />
-            <element signature="e#1582#1583#0" expanded="true" />
-            <element signature="e#1617#1618#0" expanded="true" />
-            <element signature="e#1648#1649#0" expanded="true" />
-            <element signature="e#1689#1690#0" expanded="true" />
-            <element signature="e#1727#1728#0" expanded="true" />
-            <element signature="e#3142#3143#0" expanded="true" />
-            <element signature="e#3178#3179#0" expanded="true" />
-            <element signature="e#3455#3456#0" expanded="true" />
-            <element signature="e#3499#3500#0" expanded="true" />
-            <element signature="e#3661#3662#0" expanded="true" />
-            <element signature="e#3715#3716#0" expanded="true" />
-            <element signature="e#3813#3814#0" expanded="true" />
-            <element signature="e#3848#3849#0" expanded="true" />
+            <element signature="e#4125#4126#0" expanded="true" />
+            <element signature="e#4169#4170#0" expanded="true" />
           </folding>
         </state>
       </provider>
