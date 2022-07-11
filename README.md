@@ -42,6 +42,7 @@ This plugin allows you to upload artifacts to your google service account.
   </mirrors>
 </settings>
 ```
+- precompiled files is under [artifacts](jenkins-google-drive-uploader/tree/master/artifacts) directory
 
 # Install
 
